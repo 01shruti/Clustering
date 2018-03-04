@@ -6,7 +6,10 @@ K-modes clustering for categorical data
 
 from collections import defaultdict
 
-
+import numpy as np
+from scipy import sparse
+from sklearn.base import BaseEstimator, ClusterMixin
+from sklearn.utils.validation import check_array
 
 from .util import get_max_value_key, encode_features, get_unique_rows, decode_centroids
 from .util.dissim import matching_dissim, ng_dissim
