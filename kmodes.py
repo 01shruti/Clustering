@@ -197,8 +197,7 @@ def k_modes(X, n_clusters, max_iter, dissim, init, n_init, verbose):
     for init_no in range(n_init):
 
         # _____ INIT _____
-        if verbose:
-            print("Init: initializing centroids")
+        ..
         if isinstance(init, str) and init.lower() == 'huang':
             centroids = init_huang(X, n_clusters, dissim)
         elif isinstance(init, str) and init.lower() == 'cao':
